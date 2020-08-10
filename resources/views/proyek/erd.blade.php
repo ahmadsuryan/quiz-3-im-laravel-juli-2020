@@ -1,32 +1,23 @@
 @extends('layouts.master')
 
 @section('content')
+<div class="container">
 
-    <div class="container">
-
-        <div class="panel panel-primary">
-            <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="nama_proyek">Nama Proyek :</label>
-                                <input class="form-control" id="nama_proyek" type="text" name="nama_proyek"
-                                value={{ $proyek->nama_proyek }} disabled>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                            <label for="deskripsi_proyek">Deskripsi Proyek :</label>
-                                <input class="form-control" id="deskripsi_proyek" type="text" name="deskripsi_proyek"
-                                value={{ $proyek->deskripsi_proyek }} disabled>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <img src="{{url('./ERD.PNG')}}"  alt="...">
     </div>
+</div>
+</div>
+  @endsection
 
-@endsection
+  <!-- @push('script')
+    <link rel="stylesheet" href="{{url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <script src="{{asset('plugins/datatables/jquery.dataTables.js')}}"></script>
+    <script src="{{asset('plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+        });
+    </script>
+@endpush -->

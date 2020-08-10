@@ -23,9 +23,9 @@ class ProyekController extends Controller
 
     public function erd()
     {
-        $proyek = DB::table('proyek')->get();
+        
         $data['judul']='ERD Proyek';
-        $data['proyek']=$proyek;
+        
         return view('proyek.erd',$data);
     }
 
